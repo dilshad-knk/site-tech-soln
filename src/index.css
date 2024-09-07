@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+/* back grounds */
+@layer utilities {
+  .bg-hero-pattern {
+    background-image: url('/path-to-your-image.jpg');
+  }
+}
+
+
+@layer utilities {
+  .bg-dots {
+    background-image: radial-gradient(circle, rgba(0,0,0,0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+
+
+@layer utilities {
+  .bg-black-dots {
+    background-color: black; /* Blue background */
+    background-image: radial-gradient(circle, rgba(236, 187, 187, 0.2 ) 1px, transparent 1px); 
+    background-size: 20px 20px;
+  }
+}
+
+
+
+
+
+
+@layer utilities {
+  .bg-green-dots {
+    background-color: green; /* Green background */
+    background-image: radial-gradient(circle, rgba(0,0,0,0.8) 1px, transparent 1px); /* Black dots */
+    background-size: 20px 20px;
+  }
+}
+
+
+
+@layer utilities {
+  .bg-stripes {
+    background-color: rgba(5, 180, 5, 0.282);
+    background-image: repeating-linear-gradient(
+      50deg, /* Angle of the stripes */
+      rgba(57, 223, 71, 0.8), /* Stripe color */
+      rgba(0, 0, 0, 0.2) 1px, /* Stripe width */
+      transparent 10px, 
+      transparent 20px
+    );
+  }
+}
+
+
+@layer utilities {
+  .bg-checkerboard {
+    background-image: linear-gradient(45deg, rgba(243, 228, 18, 0.3) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3)),
+                      linear-gradient(45deg, rgba(250, 0, 0, 0.3) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3));
+    background-size: 20px 20px; /* Size of the checkerboard squares */
+    background-position: 0 0, 10px 10px; /* Shift second layer for checkerboard effect */
+    background-color: aquamarine;
+  }
+}
+
+
+
+@layer utilities {
+  .bg-triangles {
+    background-image: repeating-conic-gradient(
+      from 0deg, 
+      rgba(116, 0, 240, 0.3), 
+      rgba(179, 0, 0, 0.3) 30deg, 
+      transparent 30deg, 
+      transparent 60deg
+    );
+    background-size: 40px 40px;
+  }
+}
+
+
+@layer utilities {
+  .bg-custom-dots {
+    background-image: radial-gradient(circle, rgba(255,0,0,0.8) 1px, transparent 1px),
+                      radial-gradient(circle, rgba(0,255,0,0.8) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px; /* Adjust positions for multi-color dots */
+  }
+}
+
+
+@layer utilities {
+  .bg-brand {
+   background-color: #065f46;
+  }
+}
+
+
+@layer utilities {
+  .color-brand {
+   color: #065f46;
+  }
+}
+
+
+
+
