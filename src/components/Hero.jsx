@@ -3,7 +3,7 @@ import './Hero.css'
 
 function Hero() {
   return (
-    <section className="h-screen  bg-black-dots  flex items-center justify-center relative ">
+    <section className="h-screen  bg-black-dots  flex items-center justify-center relative p-10 ">
       <div className="text-center text-white">
         <h1 className="text-5xl font-bold mb-6">We Build Amazing Websites</h1>
         <p className="text-lg mb-6">Our team crafts stunning web experiences to elevate your brand.</p>
@@ -13,7 +13,7 @@ function Hero() {
           target="_blank"
           rel="noopener noreferrer"
 
-          className="bg-white text-white bg-brand px-6 py-3 rounded-md">Get in Touch</a>
+          className="bg-white animate-pulse text-white bg-brand px-6 py-3 rounded-md">Get in Touch</a>
 
       </div>
       <div class="custom-shape-divider-bottom-1725690194">
